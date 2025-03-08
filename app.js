@@ -10,6 +10,10 @@ var usersRouter = require('./routes/users');
 const passport = require('passport');
 
 var app = express();
+const port = 3000;
+app.listen(port,()=>{
+  console.log("app listening");
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
